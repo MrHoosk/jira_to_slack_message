@@ -22,7 +22,7 @@ def hello_world(request):
             message_ready = slack_user + message_start + key + message_middle + last_updated + message_end + issue_link
             payload = '{"text":"%s"}' % message_ready
             response = requests.post(
-                'https://hooks.slack.com/services/yourslackhookurl,
+                'https://hooks.slack.com/services/yourslackhookurl',
                 data = payload
                 )
             break
